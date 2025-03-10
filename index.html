@@ -1,0 +1,291 @@
+<html>
+    <head>
+        <title>My document</title>
+    </head>
+    <body>
+        <h2 style="text-align:center;color: rgb(87, 104, 230);">Student Information Form</h2>
+        <form action="./controller.html" method="">
+            <fieldset>
+                <legend align="center"><h4>Step 1</h4></legend>
+
+                <table width="1000" cellspacing="0" cellpadding="0" border="0" align="center">
+                    <tr>
+                        <td width="50%">
+
+                            <table width="100%" cellpadding="5">
+                                <tr>
+                                    <td>
+                                    <label for="fname">Full Name:</label> </td>
+                                    <td> <input type="text" id="fname" placeholder="Applicant's full name" required> </td>
+                                </tr>
+                                
+                                <tr>
+                                    <td>
+                                    <label for="faname">Father's Name(in block letters):</label></td>
+                                    <td><input type="text" id="faname" placeholder="Father's name" required> </td>
+                                </tr>
+                              
+                                <tr>
+                                    <td>
+                                    <label for="maname">Mother's Name(in block letters):</label></td>
+                                    <td><input type="text" id="maname" placeholder="Mother's name" required> </td>
+                                </tr>
+                                
+                                <tr>
+                                    <td>
+                                    <label for="dob">Date of birth:</label> </td>
+                                    <td><input type="date" id="date" required ></td>
+                                </tr>
+                                <tr>
+                                    <td><label for="time">Time: </label></td>
+                                    <td><input type="time" id="time"></td>
+                                </tr>
+                                <tr>
+                                    <td><label for="datetime">date and time of admission: </label></td>
+                                    <td><input type="datetime-local" id="datetime" required></td>
+                                </tr>
+                                <tr>
+                                    <td><label for="height">Height: </label>
+                                    <input type="number" id="height" placeholder="height(in cm)">
+                                    </td>
+                                    <td>
+                                        <label for="weight">Weight: </label>
+                                        <input type="number" id="weight" placeholder="weight(in kg)">
+                                    </td>
+                                </tr>
+                            </table>
+
+
+                        </td>
+                        <!-- master table 2 -->
+                        <td width="50%" >
+                            <table width="100%" cellpadding="5">
+                                <tr>
+                                    <td><label for="gender">Gender: </label></td>
+                                    <td>
+                                        <input type="radio" id="male" name="gender" required> <label for="male">Male</label>
+                                        <input type="radio" id="female" name="gender" required> <label for="female">Female</label>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <label for="nationality">Nationality: </label></td>
+                                        <td><input type="text" id="nationality" required></td>
+                                    </td>
+                                </tr>
+                                <tr>    
+                                    <td>
+                                        <label for="nid">NID: </label> </td>
+                                      <td>  <input type="number" id="nid" placeholder="10-digit number" required></td>
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><label for="brn">Birth Registration number: </label></td>
+                                    <td> <input type="number" id="brn" placeholder="17-digit number"> </td>
+                               
+                                    
+                                </tr>
+                                <tr>
+                                    <td><label for="ppn">Passport number: </label></td>
+                                    <td><input type="number" id="ppn" required></td>
+                                  
+                                </tr>
+                                <tr>
+                                    <td><label for="color">Your favorite color:</label></td>
+                                    <td><input type="color" id="color"></td>
+                                </tr>
+                                <tr>
+                                    <td><label for="url">Your Facebook Link: </label></td>
+                                    <td><input type="url" id="url" required></td>
+                                </tr>
+                            </table>
+
+                        </td>
+                    </tr>
+                </table>
+            </fieldset>
+                <!-- 2nd table  -->
+            <fieldset>
+                <legend align="center"><h4>Step-2</h4></legend>
+                <table width="1000" cellspacing="0" cellpadding="0" align="center" border="0">
+                    <tr>
+                        <!-- master table -->
+                        <td width="50%">
+                            <table width="100%" cellpadding="5">
+                                <tr>
+                                    <th align="left">Present Address</th>
+                                </tr>
+                                <tr>
+                                    <td><label for="careof">Care of: </label></td>
+                                    <td><input type="text" id="careof"></td>
+                                </tr>
+                                <tr>
+                                    <td><label for="hlr">House/Road/Lane: </label></td>
+                                    <td><textarea name="" id="hlr" cols="30" rows="5" required></textarea></td>
+                                </tr>
+                                <tr>
+                                    <td><label for="thana">Thana:</label></td>
+                                    <td>
+                                        
+                                        <select name="" id="thana" >
+                                            <option value="" disabled selected>--Select Thana--</option>
+                                            <option value="">Khulshi</option>
+                                            <option value="">Kotwali</option>
+                                            <option value="">Double Mooring</option>
+                                            <option value="">Potenga</option>
+                                            <option value="">Narshingdi</option>
+                                            <option value="">Gazipur</option>
+                                            <option value="">Manikganj</option>
+                                            <option value="">Gulshan</option>
+                                            <option value="">Uttara</option>
+                                            <option value="">Lalbagh</option>
+                                            <option value="">Sutrapur</option>
+                                            <option value="">Motijhil</option>
+                                            <option value="">Demra</option>
+                                            <option value="">Sabujbag</option>
+                                            <option value="">Mirpur</option>
+                                            <option value="">Pallabi</option>
+                                        </select>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><label for="district">District: </label></td>
+                                    <td>
+                                        <select name="" id="district">
+                                            <option value="" disabled selected>--Select District--</option>
+                                            <option value="">Dhaka</option>
+                                            <option value="">Chittagong</option>
+                                            <option value="">Khulna</option>
+                                            <option value="">Rajshahi</option>
+                                            <option value="">Rangpur</option>
+                                            <option value="">Mymensingh</option>
+                                            <option value="">Sylhet</option>
+                                            <option value="">Barishal</option>
+                                         
+                                        </select>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                        <!-- master table ends -->
+
+                         <!-- master table -->
+                        <td width="50%">
+
+                            <table width="100%" cellpadding="5">
+                                <tr>
+                                    <th align="left">Permanent Address</th>
+                                </tr>
+                                <tr>
+                                    <td><label for="careof">Care of: </label></td>
+                                    <td><input type="text" id="careof"></td>
+                                </tr>
+                                <tr>
+                                    <td><label for="vr">Village/Road: </label></td>
+                                    <td><textarea name="" id="vr" cols="30" rows="5" required></textarea></td>
+                                </tr>
+                                <tr>
+                                    <td><label for="upazila">Upazila:</label></td>
+                                    <td>
+                                        
+                                        <select name="" id="upazila">
+                                            <option value="" disabled selected>--Select Upazila--</option>
+                                            <option value="">Raozan</option>
+                                            <option value="">Fatikchhari</option>
+                                            <option value="">Rangamati</option>
+                                            <option value="">Debidhar</option>
+                                            <option value="">Barura</option>
+                                            <option value="">Chandina</option>
+                                            <option value="">Chouddagram</option>
+                                            <option value="">Homna</option>
+                                            <option value="">Laksham</option>
+                                            <option value="">Fulgazi</option>
+                                            <option value="">Sonagazi</option>
+                                            <option value="">Feni</option>
+                                            <option value="">Borkol</option>
+                                            <option value="">Kaptai</option>
+                                            <option value="">Longodu</option>
+                                            <option value="">Bilaichari</option>
+                                        </select>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><label for="district">District: </label></td>
+                                    <td>
+                                        <select name="" id="district">
+                                            <option value="" disabled selected>--Select District--</option>
+                                            <option value="">Dhaka</option>
+                                            <option value="">Chittagong</option>
+                                            <option value="">Khulna</option>
+                                            <option value="">Rajshahi</option>
+                                            <option value="">Rangpur</option>
+                                            <option value="">Mymensingh</option>
+                                            <option value="">Sylhet</option>
+                                            <option value="">Barishal</option>
+                                         
+                                        </select>
+                                    </td>
+                                </tr>
+                            </table>
+
+                        </td>
+                        <!-- master table ends-->
+                    </tr>
+                </table>
+
+            </fieldset>
+
+        <fieldset>
+            <legend align="center"><h4>Step-3</h4></legend>
+
+            <table width="1000" cellpading="0" cellspacing="40" align="center">
+                <tr>
+                    <td>
+                        <label for="payment">Select Your Payment Medium: </label>
+
+                    </td>
+                    <td>
+                        <input type="checkbox" id="bkash" name="payment" > <label for="bkash">bKash</label>
+                        <input type="checkbox" id="nagad" name="payment" > <label for="nagad">Nagad</label>
+                        <input type="checkbox" id="rocket" name="rocket" > <label for="rocket">Rocket</label>
+                    </td>
+                    <tr>
+                        <td><label>Choose Your Picture: </label></td>
+
+                        <td>
+                            <label for="picture"><img src="./images/2.jpeg" alt="pic" height="100"></label>
+                            <input type="file" id="picture" hidden accept=".png,.jpg,.jpeg">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="pw">Enter Password:</label>
+                        </td>
+                        <td>
+                            <input type="password" id="pw" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="cpw">Confirm Password:</label>
+                        </td>
+                        <td>
+                            <input type="password" id="cpw" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="right"><button type="submit" id="mybtn">Submit</button></td>
+                    </tr>
+                    
+                </tr>
+            </table>
+
+
+        </fieldset>
+        </form>
+
+
+
+    </body>
+</html>
